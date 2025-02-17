@@ -19,10 +19,19 @@ $ make install
 ```
 
 To load the controller, the global mc_rtc configuration file (mc_rtc.yaml) should have:
-
+```
 MainRobot: JVRC1
 Enabled: Humanoidcontroller
+```
 
 Finally, run the simulation interface with:
 
 `$ mc_mujoco`
+
+At the start of the simulation, you should see a screen similar to the image below:
+![First](https://github.com/Marwan-Hamze/Humanoidcontrol/blob/master/JVRC-1.png)
+
+Click the buttons in the "controller" tab in succession. For the motion to be executed without problems, click the next button only after the motion of the previous button is completed. There are 3 buttons in total: "MoveHands", "MoveCoM", and "LiftFoot".
+
+The final posture of the robot should look like the following image:
+![Second](https://github.com/Marwan-Hamze/Humanoidcontrol/blob/master/JVRC-2.png)
