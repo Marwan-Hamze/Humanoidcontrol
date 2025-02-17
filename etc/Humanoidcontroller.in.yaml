@@ -32,21 +32,25 @@ collisions:
   useMinimal: true
 # Initial set of contacts
 contacts:
-- r2: ground
+- r1: jvrc1
+  r2: ground
   r1Surface: LeftFoot
   r2Surface: AllGround
-- r2: ground
+  dof: [1,1,1,1,1,1]
+- r1: jvrc1
+  r2: ground
   r1Surface: RightFoot
   r2Surface: AllGround
+  dof: [1,1,1,1,1,1]
 
 # Some options for a specific robot
 jvrc1:
   posture:
     stiffness: 1
-    weight: 10
-  ff:
-    stiffness: 2
-    weight: 100
+    weight: 1
+  # ff:
+  #   stiffness: 2
+  #   weight: 100
 # Implement some additional text states
 states: {}
 # Transitions map
